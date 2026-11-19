@@ -173,3 +173,72 @@ li a:hover {
   background-color: white;
   transition: 0.3s;
 }
+
+main {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.design {
+  /* background-color: aqua; */
+  margin-top: 150px;
+  padding-left: 165px;
+}
+.design > h2 {
+  text-align: center;
+  color: #1f3e5a;
+  text-align: center;
+  font-family: "Overpass SemiBold";
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -1.2px;
+  margin-bottom: 93px;
+}
+.design > div {
+  /* background-color: yellow; */
+  padding: 20px;
+  display: flex;
+  height: 822px;
+}
+
+.content {
+  /* background-color: violet; */
+  width: 50%;
+}
+
+.content h3 {
+  color: #1f3e5a;
+  font-family: "Overpass SemiBold";
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+.content p {
+  color: #4c5862;
+  font-family: "Overpass Light";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  max-width: 540px;
+}
+
+.content :nth-child(2) {
+  margin-bottom: 64px;
+}
+
+.cover {
+  /* background-color: tomato; */
+  padding: 20px;
+  width: 50%;
+  position: relative;
+  overflow-x: hidden;
+}
+.cover :first-child {
+  position: absolute;
+}
+
+.cover :last-child {
+  position: absolute;
+}
