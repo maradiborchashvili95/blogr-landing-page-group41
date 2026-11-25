@@ -242,6 +242,9 @@ main {
   height: 882px;
 }
 
+.cover :nth-child(2) {
+  display: none;
+}
 .cover :first-child {
   position: absolute;
   height: 100%;
@@ -267,7 +270,7 @@ main {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 165pxss;
+  padding: 165px;
   position: relative;
   padding-right: 165px;
 }
@@ -316,6 +319,10 @@ main {
   z-index: 1;
   height: 786px;
   left: -275px;
+}
+
+.leptop-mobile {
+  display: none;
 }
 
 .free-open div {
@@ -372,7 +379,7 @@ footer ul :first-child {
 
 @media (max-width: 700px) {
   header {
-    width: 375px;
+    max-width: 375px;
     padding: 56px 24px 156px;
   }
 
@@ -399,6 +406,7 @@ footer ul :first-child {
   }
   .design {
     padding: 100px 24px;
+    margin-top: 100px;
   }
 
   .design div {
@@ -410,14 +418,82 @@ footer ul :first-child {
   }
   .cover {
     width: 100%;
+    height: 326px;
+    padding: 0;
+    position: relative;
+    margin-bottom: 46px;
+  }
+
+  .cover :nth-child(2) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
   }
   .cover :first-child {
-    width: 326px;
-    height: 326px;
+    display: none;
   }
 
   .cover :last-child {
-    width: 326px;
-    height: 326px;
+    display: none;
+  }
+
+  .design > div {
+    padding: 0;
+  }
+
+  .content {
+    text-align: center;
+  }
+  .state {
+    max-width: 375px;
+    margin-inline: auto;
+    height: 625px;
+    margin-top: 273px;
+    padding: 0;
+    text-align: center;
+    background-size: 602px;
+    background-position-x: -120px;
+    background-position-y: -245px;
+  }
+
+  .state img {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -170px;
+    width: 100%;
+    width: 350px;
+    padding-right: 0;
+  }
+
+  .free-open {
+    padding: 0;
+    flex-direction: column;
+    text-align: center;
+    max-width: 375px;
+    margin-inline: auto;
+  }
+  .leptop {
+    display: none;
+  }
+  .leptop-mobile {
+    display: inline-block;
+  }
+
+  footer {
+    padding: 0;
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+    max-width: 375px;
+    margin-inline: auto;
+    padding-bottom: 75px;
+  }
+
+  footer img {
+    padding-top: 75px;
+    margin-bottom: 32px;
   }
 }
